@@ -1,0 +1,138 @@
+@media screen and (max-width:1000px) {
+  .header_menu_container {
+    display: none;
+  }
+
+  #nav-drawer {
+    display: block;
+    position: relative;
+  }
+
+  .nav-unshown {
+    display: none;
+  }
+
+  #nav-open {
+    cursor: pointer;
+  }
+
+  #nav-open div {
+    height: 3px;
+    width: 25px;
+    border-radius: 3px;
+    background: #555;
+    display: block;
+    content: '';
+    margin-bottom: 5px;
+  }
+  #nav-open span:before {
+    bottom: -8px;
+  }
+  #nav-open span:after {
+    bottom: -16px;
+  }
+
+  #nav-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: auto;
+    position: fixed;
+    top: 50px;
+    left: 100%;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    transition: .3s ease-in-out;
+    /*-webkit-transform: translateX(205%);
+    transform: translateX(205%);*/
+  }
+  #nav-input:checked~#nav-close {
+    display: block;
+    opacity: .5;
+  }
+  #nav-input:checked~#nav-content {
+    -webkit-transform: translateX(0%);
+    transform: translateX(-100%);
+    box-shadow: 6px 0 25px rgba(0, 0, 0, .15);
+  }
+  #nav-content div {
+    padding: 20px;
+  }
+}
+
+#nav-drawer .header_list_upper {
+  color: #fff;
+  letter-spacing: 2px;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+#nav-drawer .header_list_bottom {
+  color: #f79314;
+  font-size: 10px;
+}
+
+@media screen and (max-width:670px) {
+  .header_title {
+    background-image: url(https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/course-hero-sp.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-color: #f79314;
+    padding: 0px;
+  }
+  .header_title p {
+    text-align: center;
+    padding: 22px 0px 58px 0px;
+    font-size: 20px;
+  }
+  .section_header_title br {
+    display: block;
+  }
+  .about_course {
+    text-align: left;
+    font-size: 12px;
+  }
+  .respo_span {
+    display: inline;
+  }
+  .for_person {
+    font-size: 16px;
+  }
+  .for_person br {
+    display: block;
+  }
+  .common_point_box {
+    flex-direction: column;
+    padding: 5px 10px;
+  }
+  .common_point_box li {
+    width: 100%;
+  }
+  .course_about_list {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .course_box {
+    width: 95%;
+  }
+  .study_box_list li {
+    width: 96%;
+  }
+  .student_list {
+    display: flex;
+    flex-direction:column;
+    justify-content: space-between;
+  }
+  .student_box {
+    width: 96%;
+    padding: 20px;
+  }
+  .student_comment{
+    font-size:12px;
+    font-weight:bold;
+  }
+}

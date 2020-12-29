@@ -1,0 +1,729 @@
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+li {
+  list-style: none;
+}
+
+div,
+ol,
+ul,
+li,
+h1,
+h2,
+h3,
+h4,
+p,
+a,
+img {
+  margin: 0;
+  padding: 0;
+}
+
+.container_width {
+  max-width: 1140px;
+  padding-right: 50px;
+  padding-left: 50px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.alinement {
+  display: flex;
+  justify-content: space-between;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #f79314;
+  width: 150px;
+  height: 40px;
+  border-radius: 20px;
+  text-align: center;
+  /*line-height: 40px;*/
+  color: #fff;
+}
+
+.button:hover {
+  opacity: 0.7;
+  transition: 0.2s;
+}
+
+.header_all {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 10px;
+  padding-bottom:10px;
+}
+
+.logo:hover {
+  opacity: 0.7;
+  transition: 0.2s;
+}
+
+.header_logo {
+  width: 180px;
+}
+
+
+.header_menu_container ul {
+  display: flex;
+}
+
+.header_list_upper {
+  font-weight: bold;
+  font-size: 14px;
+  margin: 0px;
+  padding: 0px;
+}
+
+.header_list_bottom {
+  font-weight: bold;
+  font-size: 10px;
+  margin: 0px;
+  padding: 0px;
+}
+
+.header_list {
+  font-size: 10px;
+  float: left;
+  text-align: center;
+  margin: 0px 15px;
+}
+
+.header_list div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.header_list:hover {
+  opacity: 0.7;
+  transition: 0.2s;
+}
+
+.header_btn {
+  font-size: 12px;
+}
+
+.current_menue {
+  color: #f79314;
+}
+
+#nav-drawer {
+  display: none;
+}
+
+.header_title {
+  background-image: url(https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/course-hero-pc.png);
+  background-repeat: no-repeat;
+  background-size: 1400px;
+  background-position: center;
+  background-color: #f79314;
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.header_title p {
+  font-size: 40px;
+  color: #fff;
+  font-weight: bold;
+  padding-left: 150px;
+}
+
+.section_about_course {
+  background-color: #fcfaf5;
+}
+
+.section_header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: bold;
+  font-size: 12px;
+  text-align: center;
+  padding-top: 50px;
+  margin-bottom: 50px;
+}
+
+.section_header_title {
+  font-size: 45px;
+}
+
+.section_header_title br {
+  display: none;
+}
+
+.section_header::after {
+  content: "";
+  padding-bottom: 20px;
+  border-bottom: solid 5px #f79314;
+  width: 50px;
+}
+
+.about_course {
+  text-align: center;
+  padding-left: 10px;
+  padding-right: 10px;
+
+}
+
+.respo_span {
+  display: block;
+}
+
+.for_person {
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.for_person p {
+  padding-top: 40px;
+}
+
+.for_person br {
+  display: none;
+}
+
+.under_line {
+  background: linear-gradient(transparent 70%, #fff79d 70%, #fff79d);
+}
+
+.about_course p:last-child {
+  padding-top: 40px;
+}
+
+.point_box {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 80px;
+  margin-bottom: 40px;
+  background-color: #fff;
+  border-radius: 20px;
+}
+
+.point_box .box_name {
+  padding-top: 30px;
+  z-index: 1;
+}
+
+.point_box .round_top {
+  position: relative;
+  top: 40px;
+  background-color: #fff;
+  margin-top: -80px;
+  width: 80px;
+  height: 80px;
+  border-radius: 40px;
+  background-image: url(https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/heading-icon.png);
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+
+}
+
+.round_top img {
+  position: absolute;
+  left: 50%;
+}
+
+.round_top img {
+  width: 50px;
+  height: auto;
+}
+
+.common_point_box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 10px 40px;
+}
+
+.common_point_box li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  padding-bottom: 20px;
+
+}
+
+.round_pop {
+  width: 90%;
+  height: 30px;
+  background-color: black;
+  color: #fff;
+  border-radius: 15px;
+  text-align: center;
+  margin-bottom: 10px;
+  font-size:12px;
+  line-height:30px;
+}
+
+.common_point_text{
+  font-size:14px;
+  font-weight:bold;
+}
+.common_point_box img {
+  width: 100%;
+}
+
+.common_point_text img {
+  width: 20px;
+}
+
+.course_about_list {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px 40px 20px;
+}
+
+.course_box {
+  width: 48%;
+  border-radius: 10px;
+  background-color: #fff;
+  margin-bottom: 40px;
+  border: 1px solid #7070701A;
+}
+
+.box_head {
+  background-color: #f79314;
+  color: #fff;
+  border-radius: 10px 10px 0px 0px;
+  text-align: center;
+  padding: 20px 0px;
+}
+
+.box_head p {
+  font-size: 12px;
+  padding: 5px 0px;
+}
+
+.course_about {
+  color: #22222299;
+  font-size: 16px;
+  padding: 20px;
+}
+
+.course_about p:last-child {
+  padding-bottom: 10px;
+}
+
+.course_price {
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  padding: 20px 0px;
+  color: #000000;
+}
+
+.course_price span {
+  font-size: 12px;
+  font-weight: normal;
+}
+
+.course_term {
+  background-color: #fff8ea;
+  text-align: center;
+  font-weight: bold;
+  padding: 20px 0px;
+}
+
+.course_term span {
+  font-size: 30px;
+}
+
+.course_term_detail {
+  background-color: #fff;
+  text-align: center;
+  font-size: 12px;
+  padding: 20px 0px;
+}
+
+.course_term_detail span {
+  color: #f79314;
+}
+
+.chat_support {
+  background-color: #fff8ea;
+  text-align: center;
+  font-size: 12px;
+  padding: 20px 0px;
+}
+
+.chat_support span {
+  color: #f79314;
+}
+
+.start_support {
+  background-color: #fff;
+  text-align: center;
+  font-size: 12px;
+  padding: 20px 0px;
+}
+
+.start_support span {
+  color: #f79314;
+}
+
+.detail_link {
+  background-color: #fff8ea;
+  text-align: center;
+  font-size: 12px;
+  padding: 20px 0px;
+  border-radius: 0px 0px 10px 10px;
+
+}
+
+.detail_link a {
+  color: #f79314;
+}
+
+.detail_link::before {
+  content: "\203A";
+  display: inline-block;
+  font-weight: bold;
+  margin-right: 10px;
+  transform: rotate(90deg);
+  color: #f79314;
+}
+
+.section_plan {
+  background-color: #fff;
+}
+
+.course_plan_list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 20px;
+}
+
+.course_plan_box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 20px;
+  margin-bottom: 50px;
+  background-color: #fcfaf5;
+  border-radius: 20px;
+}
+
+.course_name {
+  font-size: 30px;
+  background: linear-gradient(-40deg, #f79214, #f74e06);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding: 10px 0px;
+}
+
+.recomend_point {
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 20px;
+  width: 100%;
+  font-weight: normal;
+  margin-bottom: 20px;
+}
+
+.recomend_point p {
+  padding: 10px 0px 10px 15px;
+}
+
+.plan_point_header {
+  font-size: 20px;
+}
+
+.plan_point_header::before {
+  position: relative;
+  top: 1px;
+  content: '';
+  display: inline-block;
+  background-image: url(https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/icon-point.png);
+  width: 20px;
+  height: 20px;
+  background-size: 100%;
+}
+
+.recomend_point_list li {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  font-weight: normal;
+}
+
+.recomend_point_list li::before {
+  content: '';
+  display: inline-block;
+  background-color: #f79314;
+  font-size: 5px;
+  width: 6px;
+  height: 6px;
+  border-radius: 3px;
+  margin-left: 15px;
+  margin-right: 5px;
+}
+
+.orange_pop {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 28px;
+  background-color: #fcfaf5;
+  color: #f79314;
+  width: 100px;
+  border-radius: 14px;
+  margin: 10px 0px 10px 0px;
+}
+
+.lesson_list {
+  padding-left: 10px;
+  font-weight: normal;
+}
+
+.pencil_img::before {
+  content: '';
+  display: inline-block;
+  background-image: url(https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/icon-pencil.png);
+  width: 14px;
+  height: 14px;
+  background-size: 100%;
+  margin-right: 10px;
+}
+
+.calender_img::before {
+  content: '';
+  display: inline-block;
+  background-image: url(https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/icon-calender.png);
+  width: 14px;
+  height: 14px;
+  background-size: 100%;
+  margin-right: 10px;
+}
+
+.person_img::before {
+  content: '';
+  display: inline-block;
+  background-image: url(https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/icon-condition.png);
+  width: 14px;
+  height: 14px;
+  background-size: 100%;
+  margin-right: 10px;
+}
+
+.money_img::before {
+  content: '';
+  display: inline-block;
+  background-image: url(https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/icon-coin.png);
+  width: 16px;
+  height: 16px;
+  background-size: 100%;
+  margin-right: 10px;
+  margin-top: 2px;
+}
+
+.discount_by_skil {
+  display: flex;
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 20px;
+  width: 100%;
+  font-weight: normal;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+.discount_by_skil img {
+  width: 70px;
+  height: 70px;
+  margin-right: 20px;
+}
+
+.discount_header {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.discount_text_box span {
+  color: #f79314;
+}
+
+.section_student {
+  background-color: #f6f6f6;
+  padding-top: 30px;
+}
+
+.student_background {
+  background-image: url(https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/bg-section-top-course.png);
+  background-repeat: no-repeat;
+  background-size: 250px 250px;
+  background-position: 100% top;
+  width: 100%;
+
+}
+
+.student_special {
+  margin-bottom: 0px;
+}
+
+.study_box_list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.study_box_list li {
+  width: 48%;
+}
+
+.study_box_list img {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.study_box_list p {
+  padding: 10px 0px 20px 0px;
+}
+
+.student_list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.student_box {
+  width: calc(100% / 3);
+  padding: 20px;
+}
+
+.student_image {
+  position: relative;
+  padding-top: 60%;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.student_image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 140%;
+  object-fit: cover;
+}
+
+.student_comment {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-weight: bold;
+  font-size:14px;
+}
+
+.student_box:hover .student_image img {
+  transform: scale(1.2, 1.2);
+  transition: transform 0.3s;
+}
+
+.student_box:hover .student_comment {
+  color: #f79314;
+}
+
+footer {
+  background-color: #f79314;
+  color: #fff;
+}
+
+.footer_container {
+  display: flex;
+}
+
+.footer_left_box {
+  width: 40%;
+  padding-top: 50px;
+}
+
+.footer_center_box {
+  width: 40%;
+  padding: 50px 20px;
+  box-sizing: border-box;
+}
+
+.footer_right_box {
+  display: flex;
+  align-items: flex-end;
+  width: 20%;
+  padding-top: 50px;
+  padding-bottom: 70px;
+}
+
+.footer_left_box img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+}
+
+.footer_left_box img:hover {
+  opacity: 0.7;
+  transition: 0.2s;
+}
+
+.campany_name {
+  padding: 10px 0px;
+}
+
+.sns_logo {
+  display: flex;
+  padding-top: 20px;
+}
+
+.sns_logo li {
+  padding-right: 20px;
+  box-sizing: border-box;
+}
+
+.sns_logo img {
+  width: 50px;
+  height: auto;
+}
+
+.copyright {
+  padding-top: 100px;
+  font-size: 8px;
+}
+
+.footer_center_box li {
+  padding-bottom: 30px;
+}
+
+.footer_center_box a {
+  color: #fff;
+}
+
+.footer_center_box span {
+  font-weight: bold;
+  margin-right: 15px;
+}
+
+.footer_right_box img {
+  width: 100%;
+  max-width: 150px;
+  height: auto;
+}
